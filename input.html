@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Command Processor</title>
+	<style>
+		* {margin: 0; padding: 0;}
+		html {margin: 10px;}
+		input { margin-right: 10px;	}
+	</style>
+	<script type="text/javascript">
+		function inputData(){
+			// input command
+			var form = document.command;
+			var text = form.input.value;
+			printData(text);
+		}
+		function baseCommand(text){
+			// test base command
+			var result = text;
+			return result;
+		}
+		function processingCommand(text){
+			// test processing command input
+		}
+		function printData(text){
+			// test print
+			document.getElementById('print').innerHTML = text;
+		}
+	</script>
+</head>
+<body>
+
+<form name="command">
+	<p>Введи команду</p>
+	<p><input name="input"></p>
+	<p>
+		<input type="button" value="Отправить" onclick="inputData()">
+		<input type="reset" value="Отменить">
+	</p>
+</form>
+<p id="print"></p>
+</body>
+</html>
