@@ -9,19 +9,23 @@
 		input { margin-right: 10px;	}
 	</style>
 	<script type="text/javascript">
+		// test base command
+		var baseCommand = [
+			[имя_команды1, синтаксис1, правила1],
+			[имя_команды2, синтаксис2, правила2],
+			[имя_команды3, синтаксис3, правила3],
+		];
 		function inputData(){
 			// input command
 			var form = document.command;
-			var text = form.input.value;
-			printData(text);
-		}
-		function baseCommand(text){
-			// test base command
-			var result = text;
-			return result;
+			var rawText = form.input.value;
+			var readyText = processingCommand(rawText);
+			printData(readyText);
 		}
 		function processingCommand(text){
 			// test processing command input
+			var result = text;
+			return result;
 		}
 		function printData(text){
 			// test print
