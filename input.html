@@ -3,35 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Command Processor</title>
-	<style>
-		* {margin: 0; padding: 0;}
-		html {margin: 10px;}
-		input { margin-right: 10px;	}
-	</style>
-	<script type="text/javascript">
-		// test base command
-		var baseCommand = [
-			[имя_команды1, синтаксис1, правила1],
-			[имя_команды2, синтаксис2, правила2],
-			[имя_команды3, синтаксис3, правила3],
-		];
-		function inputData(){
-			// input command
-			var form = document.command;
-			var rawText = form.input.value;
-			var readyText = processingCommand(rawText);
-			printData(readyText);
-		}
-		function processingCommand(text){
-			// test processing command input
-			var result = text;
-			return result;
-		}
-		function printData(text){
-			// test print
-			document.getElementById('print').innerHTML = text;
-		}
-	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="base_ommand.js" type="text/javascript"></script>
+	<script src="processing_сommand.js" type="text/javascript"></script>
+	<script src="print_data.js" type="text/javascript"></script>
+	<script src="input_data.js" type="text/javascript"></script>
 </head>
 <body>
 
